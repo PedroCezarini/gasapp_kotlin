@@ -28,5 +28,13 @@
         android:layout_gravity="center_horizontal"
         android:text="Gravar"
         android:textSize="18sp"/>
+    
+    <TextView
+        android:id="@+id/text_resposta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Teste"/>
 
 </LinearLayout>
