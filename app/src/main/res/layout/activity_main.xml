@@ -9,24 +9,32 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/edit_nome"
+        android:id="@+id/valor1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="nome"/>
+        android:inputType="number"
+        android:hint="valor1"/>
 
     <EditText
-        android:id="@+id/edit_celular"
+        android:id="@+id/valor2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:hint="celular"/>
+        android:inputType="number"
+        android:hint="valor2"/>
+
+    <EditText
+        android:id="@+id/valor3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="valor3"/>
     
     <Button
-        android:id="@+id/button_gravar"
+        android:id="@+id/button_calcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Gravar"
+        android:text="Calcular"
         android:textSize="18sp"/>
     
     <TextView
