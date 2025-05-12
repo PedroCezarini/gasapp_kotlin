@@ -26,11 +26,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    fun btnGravar(){
-        val valor1 = binding.valor1.text.toString().toFloat()
-        val valor2 = binding.valor2.text.toString().toFloat()
-        val valor3 = binding.valor3.text.toString().toFloat()
+    fun btnGravar() {
+        try {
+            val distancia = binding.editDistancia.text.toString().toFloat()
+            val preco = binding.editPreco.text.toString().toFloat()
+            val autonomia = binding.editAutonomia.text.toString().toFloat()
 
-        binding.textResposta.text = "O botão foi clicado"
+            if (autonomia == 0f) {
+                binding.textResposta.text = "A autonomia deve ser maior que zero."
+                return
+            }
+
+            val gasto = (distancia / autonomia) * preco
+            binding.textResposta.text = "Gasto total: R$ %.2f".format(gasto)
+        } catch (e: Exception) {
+            binding.textResposta.text = "Preencha todos os campos corretamente."
+        }
     }
 }
