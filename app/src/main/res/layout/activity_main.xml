@@ -18,6 +18,15 @@
         android:id="@+id/edit_celular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="phone"
         android:hint="celular"/>
+    
+    <Button
+        android:id="@+id/button_gravar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Gravar"
+        android:textSize="18sp"/>
 
 </LinearLayout>
