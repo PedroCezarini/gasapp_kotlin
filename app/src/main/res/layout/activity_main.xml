@@ -5,23 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
+    <EditText
+        android:id="@+id/edit_nome"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView1"
-        android:background="@color/fundotexto"
-        android:gravity="center"
-        android:textSize="20sp" />
+        android:hint="nome"/>
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
+    <EditText
+        android:id="@+id/edit_celular"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView2"
-        android:textSize="20sp"/>
+        android:hint="celular"/>
 
 </LinearLayout>
