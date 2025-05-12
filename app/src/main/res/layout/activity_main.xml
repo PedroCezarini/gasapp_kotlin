@@ -8,26 +8,35 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/valor1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:hint="valor1"/>
+    <ImageView
+        android:id="@+id/image_gasolina"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/gasolina"
+        android:contentDescription="Ícone de gasolina"/>
 
     <EditText
-        android:id="@+id/valor2"
+        android:id="@+id/edit_distancia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="valor2"/>
+        android:hint="Distância(km)"/>
 
     <EditText
-        android:id="@+id/valor3"
+        android:id="@+id/edit_preco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="valor3"/>
+        android:hint="Preço por litro(R$)"/>
+
+    <EditText
+        android:id="@+id/edit_autonomia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Autonomia(km/l)"/>
     
     <Button
         android:id="@+id/button_calcular"
@@ -36,13 +45,16 @@
         android:layout_gravity="center_horizontal"
         android:text="Calcular"
         android:textSize="18sp"/>
-    
+
     <TextView
         android:id="@+id/text_resposta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:text="Teste"/>
+        android:text="Insira os valores e clique em 'Calcular' "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2710A8" />
 
 </LinearLayout>
